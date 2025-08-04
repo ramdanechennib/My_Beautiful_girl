@@ -3,7 +3,7 @@ const langSwitch = document.getElementById("lang-switch");
 
 // النصوص باللغتين
 const messages = {
-    ar: `يا مؤنستي الغالية 🌸، يا أجمل صدفة في حياتي 💫، يا هدية ربي 🎁 التي جاءتني في وقت كنت ألح على الله 🙏 ليعطيني استجابة جميلة، وها أنا ذا 💞 حبيب فتاة تمنيتها من أعماق قلبي ❤️ وهي أنتِ يا بشرى 😍 أحبك كثيييييراً 💖... أأأأه 🥺
+    ar: `يا مؤنستي الغالية 🌸، يا أجمل صدفة في حياتي 💫، يا هدية ربي 🎁 التي جاءتني في وقت كنت ألح على الله 🙏 ليعطيني استجابة جميلة، وها أنا ذا 💞 حبيب فتاة تمنيتها من أعماق قلبي ❤️ وهي أنتِ ي 😍 أحبك كثيييييراً 💖... أأأأه 🥺
 
 يا دعائي الجميل 🌹، كل يوم أعيشه معك هو نعمة من ربي 💝، وكل لحظة أسمع فيها صوتك 🎶 كأنها آذان رحمة تنزل في قلبي ❤️ وراحة تسكن في نفسي 🕊️.
 
@@ -13,7 +13,7 @@ const messages = {
 
 أتمنى ألا أجرحك يوماً 💔، وألا تتغيري عليّ أبداً 🙏، فإني فرح بك كثيييييراً 🥰 يا حُباه 💞.
 `,
-    en: `My dearest companion 🌸, the most beautiful coincidence in my life 💫, the gift from God 🎁 that came when I was begging Him 🙏 for a beautiful answer. And here I am 💞 in love with the girl I always wished for — and it's you, Bouchra 😍. I love you soooo much 💖... ahhh 🥺
+    en: `My dearest companion 🌸, the most beautiful coincidence in my life 💫, the gift from God 🎁 that came when I was begging Him 🙏 for a beautiful answer. And here I am 💞 in love with the girl I always wished for — and it's you, kamar 😍. I love you soooo much 💖... ahhh 🥺
 
 You're my beautiful prayer 🌹. Every day I live with you is a blessing from above 💝, and every moment I hear your voice 🎶 feels like a wave of mercy in my heart ❤️ and peace within my soul 🕊️.
 
@@ -42,8 +42,8 @@ document.getElementById("btn").addEventListener("click", function () {
   }
 
   const validNames = [
-    ["رمضان شنيب", "ramdane chennib"],
-    ["بشرى حمدي", "bouchra hamdi"]
+    ["فاروق", "farouk"],
+    [ "قمر", "KAMAR"]
   ];
 
   const namesEntered = [yourName, partnerName];
@@ -51,7 +51,7 @@ document.getElementById("btn").addEventListener("click", function () {
   const matchSecondName = validNames[1].includes(namesEntered[0]) || validNames[1].includes(namesEntered[1]);
 
   if (!(matchFirstName && matchSecondName)) {
-    result.textContent = " يا الزينة تاعي ماعرفتش تكتب الاسم؟ 😅 جرب اكتب  بشرى حمدي و رمضان شنيب ماعليش اكتب حتا بالانجليزي ❤️ ";
+    result.textContent = " يا الزينة تاعي ماعرفتش تكتب الاسم؟ 😅 جرب اكتب قمر و فاروق ماعليش اكتب حتا بالانجليزي ❤️ ";
     return;
   }
 
